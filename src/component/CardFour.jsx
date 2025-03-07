@@ -32,7 +32,7 @@ const CardFour = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % headings.length);
-    }, 3000); // Slower auto-switch time for better UX
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -40,14 +40,14 @@ const CardFour = () => {
   const currentIndex = hoveredIndex !== null ? hoveredIndex : activeIndex;
 
   return (
-    <div className="flex flex-col md:flex-row items-center gap-8  ">
+    <div className="flex flex-col lg:flex-row items-center gap-8 px-6 py-12 bg-[#ffa725] lg:px-16">
       {/* Left Side - Background Image with Dynamic Centered Image */}
-      <div className="relative w-full flex justify-center">
+      <div className="relative w-full lg:w-1/2 flex justify-center">
         {/* Background Image */}
         <img
           src={CardFourBg}
           alt="Background"
-          className="w-full h-[600px] object-cover "
+          className="w-full h-[350px] sm:h-[450px] lg:h-[600px] object-cover rounded-lg"
         />
 
         {/* Centered Dynamic Image */}
@@ -56,7 +56,7 @@ const CardFour = () => {
             key={currentIndex}
             src={images[currentIndex]}
             alt={`Image ${currentIndex + 1}`}
-            className="w-64 h-64 rounded-lg shadow-xl"
+            className="w-48 sm:w-56 md:w-64 h-48 sm:h-56 md:h-64 rounded-lg shadow-xl"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -65,14 +65,16 @@ const CardFour = () => {
       </div>
 
       {/* Right Side - Text & Headings */}
-      <div className="w-full mt-4 ">
-        <h2 className="text-4xl font-semibold mb-4">Manage Daily Workflows</h2>
-        <p className="text-lg text-gray-600">
+      <div className="w-full lg:w-1/2 text-center lg:text-left">
+        <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
+          Manage Daily Workflows
+        </h2>
+        <p className="text-base sm:text-lg text-gray-600">
           Use the dashboard to manage your publishing cadence and categories, customize contributor settings, and track analytics.
         </p>
 
         {/* Auto-Switching & Hover-Activated Headings */}
-        <div className="mt-6 space-y-4 p-4">
+        <div className="mt-6 space-y-4">
           {headings.map((heading, index) => (
             <motion.div
               key={index}
@@ -85,8 +87,10 @@ const CardFour = () => {
                 currentIndex === index ? "bg-gray-200 text-black" : "text-gray-500"
               }`}
             >
-              <h3 className="text-xl font-bold">{heading.title}:</h3>
-              <p className="text-gray-600">{heading.description}</p>
+              <h3 className="text-lg sm:text-xl font-bold">{heading.title}:</h3>
+              <p className="text-gray-600 text-sm sm:text-base">
+                {heading.description}
+              </p>
             </motion.div>
           ))}
         </div>

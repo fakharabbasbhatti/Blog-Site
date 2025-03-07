@@ -1,35 +1,46 @@
 import React from "react";
-import HeroImage from "/hero.jpg";
+import HeroImage from "/hero1.jpg";
 import HeroBg from "/herobg.jpg";
 
 const Hero = () => {
   return (
     <div
-      className="flex pt-12 px-6 md:px-20 items-center bg-green-500 justify-center md:h-screen overflow-hidden"
+      className="flex items-center justify-center px-6 py-12 md:px-20 md:h-screen overflow-hidden relative"
       style={{
         backgroundImage: `url(${HeroBg})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="flex flex-col gap-6 md:flex-row  items-center max-w-8xl  bg-opacity-70 p-10">
-        <div className="w-full md:w-1/2 lg:pr-32">
-          <h2 className="text-4xl text-[#FFFFFF] lg:text-5xl text-center md:text-start font-medium">
-            Create a blog
+      {/* Overlay */}
+
+
+      <div className="relative z-10 flex flex-col md:flex-row items-center max-w-7xl w-full p-6 md:p-10">
+        {/* Left Section */}
+        <div className="w-full md:w-1/2 lg:pr-20 text-center md:text-left">
+          <h2 className="text-3xl md:text-5xl text-white font-semibold leading-tight">
+            Create a Blog
           </h2>
-          <h3 className="mt-6 text-[#ffffff]  md:mt-10 text-md lg:text-xl text-center md:text-start  ">
+          <p className="mt-4 md:mt-6 text-white text-sm md:text-lg">
             Share your story with the world. Create a beautiful, personalized blog that fits your brand. Grow your
             audience with built-in marketing tools, or transform your passion into revenue by gating access with a
             paywall.
-          </h3>
-          <div className="mt-10 flex flex-col sm:flex-row justify-center md:justify-start">
-            <button className="w-full text-black bg-[#ffffff] sm:w-40 px-4 py-3 rounded font-base text-md border-2 border-white">
+          </p>
+          <div className="mt-6 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+            {/* <button className="w-full sm:w-auto px-6 py-3 bg-white text-black font-medium rounded-lg shadow-lg hover:bg-gray-200 transition">
               GET STARTED
-            </button>
+            </button> */}
+            <button className="text-black text-lg uppercase px-5 py-2 rounded-lg border-2 border-white bg-white shadow-[3px_3px_0px_0px_#000] transition active:shadow-none active:translate-x-[3px] active:translate-y-[3px]">
+  GET STARTED
+</button>
+ 
+      
+
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <img src={HeroImage} alt="Hero" className="rounded-lg shadow-lg" />
+        {/* Right Section */}
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
+          <img src={HeroImage} alt="Hero" className="rounded-lg shadow-xl w-full max-w-sm md:max-w-md lg:max-w-lg" />
         </div>
       </div>
     </div>

@@ -4,28 +4,31 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const data = [
   {
-    title: "“A blog connects you in a personal way with your clients and online visitors.”",
+    title:
+      "“A blog connects you in a personal way with your clients and online visitors.”",
     subTitle: "Moisés Hernández, Designer",
     description: "moises-hernandez.com/diary",
     image: "/card9.jpg",
-    bgColor: "bg-[#7a4438]",
-    descColor: "text-yellow-300",
+    bgColor: "bg-[#211c84]",
+    descColor: "text-[#f25e3d]",
   },
   {
-    title: "“Squarespace’s analytics, SEO tools, and social media integrations have helped us grow from a blog with a small following to a growing global audience.”",
+    title:
+      "“Squarespace’s analytics, SEO tools, and social media integrations have helped us grow from a blog with a small following to a growing global audience.”",
     subTitle: "Amyann Cadwell, Co-founder & CEO",
     description: "thegoodtrade.com/beauty",
     image: "/card10.jpg",
     bgColor: "bg-[#8c8c8f]",
-    descColor: "text-green-300",
+    descColor: "text-[#44449c]",
   },
   {
-    title: "“I use Squarespace for my magazine and photography website because it is beautiful, easy to use, and versatile.”",
+    title:
+      "“I use Squarespace for my magazine and photography website because it is beautiful, easy to use, and versatile.”",
     subTitle: "Erika Astrid, Founder",
     description: "thekunstmagazine.com/blog",
     image: "/card11.jpg",
     bgColor: "bg-[#b59c81]",
-    descColor: "text-blue-300",
+    descColor: "text-[#fac58c]",
   },
 ];
 
@@ -41,13 +44,19 @@ const CardFive = () => {
   };
 
   return (
-    <div className={`flex items-center justify-between p-10 ${data[index].bgColor} min-h-screen`}>
+    <div
+      className={`flex flex-col lg:flex-row items-center justify-center px-6 py-12 lg:px-16 min-h-screen ${data[index].bgColor}`}
+    >
       {/* Left Content */}
-      <div className="w-[500px] text-white">
-        <h1 className="text-2xl font-bold mb-8">{data[index].title}</h1>
-        <h2 className="text-[12px] font-medium uppercase ">{data[index].subTitle}</h2>
+      <div className="w-full lg:w-1/2 text-white text-center lg:text-left">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6">
+          {data[index].title}
+        </h1>
+        <h2 className="text-sm sm:text-md font-medium uppercase">
+          {data[index].subTitle}
+        </h2>
         <motion.h3
-          className={`text-[12px] relative underline uppercase ${data[index].descColor}`}
+          className={`text-sm sm:text-[10px] relative underline uppercase ${data[index].descColor}`}
         >
           {data[index].description}
           <motion.div
@@ -58,20 +67,32 @@ const CardFive = () => {
         </motion.h3>
       </div>
 
-      {/* Right Content */}
-      <div className="w-1/2 flex flex-col items-end">
-        <img src={data[index].image} alt="Slider Image" className="w-[600px] h-[400px]  rounded-lg shadow-lg" />
+      {/* Right Content (Image & Navigation Buttons) */}
+      <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-end mt-8 lg:mt-0">
+        <img
+          src={data[index].image}
+          alt="Slider Image"
+          className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-auto rounded-lg shadow-lg"
+        />
+
+        {/* Navigation Buttons */}
         <div className="flex mt-4 space-x-4">
-          <button onClick={handlePrev} className="p-2  text-white rounded-full shadow-lg">
-            <FaArrowLeft size={24} />
+          <button
+            onClick={handlePrev}
+            className="p-2  bg-opacity-40 text-white rounded-full shadow-lg hover:bg-opacity-60 transition"
+          >
+            <FaArrowLeft size={20} />
           </button>
-          <button onClick={handleNext} className="p-2  text-white rounded-full shadow-lg">
-            <FaArrowRight size={24} />
+          <button
+            onClick={handleNext}
+            className="p-2  bg-opacity-40 text-white rounded-full shadow-lg hover:bg-opacity-60 transition"
+          >
+            <FaArrowRight size={20} />
           </button>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default CardFive;

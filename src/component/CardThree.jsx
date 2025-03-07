@@ -5,58 +5,62 @@ import CardFive from "/card5.jpg";
 
 const CardThree = () => {
   return (
-    <div className="flex flex-col items-center text-center py-16 px-4 bg-[#60777c]">
-      
+    <div className="flex flex-col items-center text-center py-12 px-4 sm:px-8 md:px-16 bg-[#211C84]">
+
       {/* Main Heading */}
-      <h2 className="text-5xl font-bold text-white max-w-3xl">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white max-w-3xl">
         Turn your content into income
       </h2>
 
       {/* Additional Heading */}
-      <p className="text-lg text-white font-medium max-w-xl mt-6">
+      <p className="text-base sm:text-lg md:text-xl text-white font-medium max-w-xl mt-4 sm:mt-6">
         Monetize your blog by adding a paywall and charging for access. Squarespace gives you everything you need to create, promote, and sell digital content and memberships.
       </p>
 
       {/* Call to Action with Hover Effect */}
-      <a href="#" className="mt-6 text-sm border-b-2 font-medium text-white flex items-center gap-2 group">
+      <a href="#" className="relative mt-4 sm:mt-6 text-sm border-b-2 font-medium text-white flex items-center gap-2 group">
         LEARN MORE
         <FaArrowRight className="group-hover:translate-x-2 transition-transform duration-300" />
+
+        {/* Animated Underline */}
+        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
       </a>
 
-      {/* Card 1 */}
-      <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto mt-12 bg-opacity-70 p-10 gap-8">
-        
+
+      {/* Card 1 - Image on Right */}
+      <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto mt-12 p-6 sm:p-10 gap-6 sm:gap-8">
+
         {/* Left Side - Text */}
-        <div className="w-full md:w-1/2">
-          <h2 className="text-4xl text-white lg:text-3xl font-semibold text-center md:text-left">
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl text-white font-semibold">
             Sell premium content
           </h2>
-          <p className="mt-4 text-white text-md lg:text-lg font-medium text-center md:text-left">
+          <p className="mt-3 sm:mt-4 text-white text-sm sm:text-md lg:text-lg font-medium">
             Whether you’re a chef selling recipes and cooking videos, or a financial planner sharing courses and newsletters, Squarespace has the tools you need to sell exclusive content on your website.
           </p>
         </div>
 
         {/* Right Side - Image */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <img src={CardFour} alt="CardFour" className="rounded-lg shadow-lg w-full max-w-sm" />
+          <img src={CardFour} alt="CardFour" className="rounded-lg shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md" />
         </div>
 
       </div>
 
-      {/* Card 2 */}
-      <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto mt-12 bg-opacity-70 p-10 gap-8">
-        
-        {/* Left Side - Image */}
+      {/* Card 2 - Image on Left */}
+      <div className="flex flex-col md:flex-row items-center max-w-7xl mx-auto mt-12 p-6 sm:p-10 gap-6 sm:gap-8">
+
+        {/* Left Side - Image (Updated to appear on left) */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-          <img src={CardFive} alt="CardFive" className="rounded-lg shadow-lg w-full max-w-sm" />
+          <img src={CardFive} alt="CardFive" className="rounded-lg shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md" />
         </div>
 
         {/* Right Side - Text */}
-        <div className="w-full md:w-1/2">
-          <h2 className="text-4xl text-white lg:text-3xl font-semibold text-center md:text-left">
+        <div className="w-full md:w-1/2 text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl text-white font-semibold">
             Create a paid newsletter
           </h2>
-          <p className="mt-4 text-white text-md lg:text-lg font-medium text-center md:text-left">
+          <p className="mt-3 sm:mt-4 text-white text-sm sm:text-md lg:text-lg font-medium">
             Use Squarespace to grow and manage your mailing lists, send newsletters, and connect with your audience—all from one place.
           </p>
         </div>
