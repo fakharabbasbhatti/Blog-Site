@@ -40,7 +40,7 @@ const CardFour = () => {
   const currentIndex = hoveredIndex !== null ? hoveredIndex : activeIndex;
 
   return (
-    <div className="flex flex-col lg:flex-row items-center gap-8 px-6 py-12 bg-[#ffa725] lg:px-16">
+    <div className="flex flex-col lg:flex-row items-center gap-8 px-6 py-12 bg-[#a9b5df] lg:px-16">
       {/* Left Side - Background Image with Dynamic Centered Image */}
       <div className="relative w-full lg:w-1/2 flex justify-center">
         {/* Background Image */}
@@ -69,7 +69,7 @@ const CardFour = () => {
         <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
           Manage Daily Workflows
         </h2>
-        <p className="text-base sm:text-lg text-gray-600">
+        <p className="text-base sm:text-lg text-gray-900">
           Use the dashboard to manage your publishing cadence and categories, customize contributor settings, and track analytics.
         </p>
 
@@ -83,12 +83,11 @@ const CardFour = () => {
               initial={{ opacity: 0.6, x: -10 }}
               animate={{ opacity: currentIndex === index ? 1 : 0.6, x: 0 }}
               transition={{ duration: 0.5 }}
-              className={`p-3 rounded-lg cursor-pointer transition-all duration-300 ${
-                currentIndex === index ? "bg-gray-200 text-black" : "text-gray-500"
-              }`}
+              className={`p-3 rounded-lg cursor-pointer transition-all duration-300 ${currentIndex === index ? "bg-gray-200 text-black" : "text-gray-300"
+                }`}
             >
               <h3 className="text-lg sm:text-xl font-bold">{heading.title}:</h3>
-              <p className="text-gray-600 text-sm sm:text-base">
+              <p className="text-gray-900 text-sm sm:text-base">
                 {heading.description}
               </p>
             </motion.div>

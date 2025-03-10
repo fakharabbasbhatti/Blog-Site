@@ -5,7 +5,7 @@ import CardFive from "/card5.jpg";
 
 const CardThree = () => {
   return (
-    <div className="flex flex-col items-center text-center py-12 px-4 sm:px-8 md:px-16 bg-[#211C84]">
+    <div className="flex flex-col items-center text-center py-12 px-4 sm:px-8 md:px-16 bg-[#788673]">
 
       {/* Main Heading */}
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white max-w-3xl">

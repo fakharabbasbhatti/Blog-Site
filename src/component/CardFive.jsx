@@ -9,7 +9,7 @@ const data = [
     subTitle: "Moisés Hernández, Designer",
     description: "moises-hernandez.com/diary",
     image: "/card9.jpg",
-    bgColor: "bg-[#211c84]",
+    bgColor: "bg-[#788673]",
     descColor: "text-[#f25e3d]",
   },
   {
@@ -18,7 +18,7 @@ const data = [
     subTitle: "Amyann Cadwell, Co-founder & CEO",
     description: "thegoodtrade.com/beauty",
     image: "/card10.jpg",
-    bgColor: "bg-[#8c8c8f]",
+    bgColor: "bg-[#788673]",
     descColor: "text-[#44449c]",
   },
   {
@@ -27,7 +27,7 @@ const data = [
     subTitle: "Erika Astrid, Founder",
     description: "thekunstmagazine.com/blog",
     image: "/card11.jpg",
-    bgColor: "bg-[#b59c81]",
+    bgColor: "bg-[#788673]",
     descColor: "text-[#fac58c]",
   },
 ];

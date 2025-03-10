@@ -3,7 +3,7 @@ import CardThree from "/card3.jpg";
 
 const CardTwo = () => {
     return (
-        <div className="flex pt-12 px-4 sm:px-8 md:px-16 lg:px-20 items-center bg-[#FFA725] justify-center min-h-screen">
+        <div className="flex pt-12 px-4 sm:px-8 md:px-16 lg:px-20 items-center bg-[#a9b5df] justify-center min-h-screen">
             <div className="flex flex-col gap-8 md:flex-row items-center max-w-6xl bg-opacity-70 p-6 sm:p-10">
                 {/* Text Section */}
                 <div className="w-full md:w-1/2 lg:pr-10 text-center md:text-left">

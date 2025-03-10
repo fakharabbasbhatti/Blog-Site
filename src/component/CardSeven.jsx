@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const CardSeven = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center p-6 md:p-12 bg-[#211c84] text-white">
+    <div className="flex flex-col md:flex-row justify-between items-center p-6 md:p-12 bg-[#788673] text-white">
       {/* Left Side */}
       <div className="flex flex-col gap-3 text-center md:text-left mb-6 md:mb-0">
         <h2 className="text-3xl sm:text-4xl font-bold max-w-xs">How to create a blog</h2>
@@ -11,7 +11,6 @@ const CardSeven = () => {
           {/* Moving Border Animation */}
           <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
         </button>
-
       </div>
 
       {/* Right Side */}

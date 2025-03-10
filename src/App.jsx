@@ -1,4 +1,3 @@
-
 import './App.css'
 import Hero from "./component/Hero.jsx"
 import Crousel from "./component/Crousel.jsx"
@@ -11,11 +10,10 @@ import CardSix from "./component/CardSix.jsx"
 import CardSeven from "./component/CardSeven.jsx"
 import CardEight from "./component/CardEight.jsx"
 import CardNine from "./component/CardNine.jsx"
-import CardTen from "./component/CardTen.jsx"
+
 
 function App() {
-
-  return (
+return (
     <>
     <Hero />
     <Crousel />
@@ -28,8 +26,7 @@ function App() {
     <CardSeven/>
     <CardEight/>
     <CardNine/>
-    {/* <CardTen/> */}
-    </>
+   </>
   )
 }
 

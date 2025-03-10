@@ -17,7 +17,7 @@ const CardSix = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center text-center px-6 py-12 bg-[#ffa725]">
+    <div className="flex flex-col items-center text-white text-center px-6 py-12 bg-[#a9b5df]">
       {/* Section Heading */}
       <h2 className="text-3xl sm:text-4xl font-bold mb-4">Promote your blog</h2>
       <p className="text-md sm:text-lg font-medium mb-8 max-w-lg">

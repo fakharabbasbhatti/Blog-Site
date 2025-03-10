@@ -26,7 +26,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full p-4 sm:p-8 bg-[#FFA725]">
+    <div className="flex flex-col items-center justify-center w-full p-4 sm:p-8 bg-[#a9b5df]">
       {/* Header Section */}
       <div className="w-full max-w-2xl flex flex-col md:flex-row items-start gap-6 md:gap-20">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold  cursor-pointer w-full md:w-[250px]">

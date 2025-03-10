@@ -6,7 +6,7 @@ import CardTwo from "/card2.jpg";
 
 const CardOne = () => {
     return (
-        <div className="flex flex-col items-center text-center py-16 px-4 bg-[#211C84]">
+        <div className="flex flex-col items-center text-center py-16 px-4 bg-[#788673]">
             {/* Main Heading */}
             <h2 className="text-4xl md:text-5xl font-bold text-white max-w-[350px] md:max-w-full">Explore endless design options</h2>
 

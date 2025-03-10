@@ -1,6 +1,6 @@
 const CardEight = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center p-6 text-white bg-[#ffa725] gap-6">
+    <div className="flex flex-col md:flex-row items-center p-6 text-white bg-[#a9b5df] gap-6">
       {/* Left Side - Image */}
       <div className="w-full md:w-1/2">
         <img
