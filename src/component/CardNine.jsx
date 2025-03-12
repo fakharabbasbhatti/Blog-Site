@@ -7,7 +7,7 @@ const CardNine = () => {
       </h2>
 
       {/* Right Side */}
-      <button className="text-black text-xl uppercase px-5 py-2 rounded-lg border-2 border-white bg-white shadow-[3px_3px_0px_0px_#252525] cursor-pointer mt-9 transition active:shadow-none active:translate-x-[3px] active:translate-y-[3px]">
+      <button className="text-black text-xl uppercase px-5 py-2 rounded-lg border-2 border-white bg-white shadow-[3px_3px_0px_0px_#252525] cursor-pointer mt-9 transition active:shadow-none active:translate-x-[3px] active:translatle-y-[3px]">
         START A FREE TRIAL
       </button>
     </div>
@@ -15,3 +15,14 @@ const CardNine = () => {
 }
 
 export default CardNine;
+
+
+
+
+
+
+
+
+
+
+
